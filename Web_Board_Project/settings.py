@@ -22,17 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-from decouple import config, Csv  # have to install python-decouple package
-import dj_database_url
-
-SECRET_KEY = config('SECRET_KEY')
-DEBUG = config('DEBUG', default=False, cast=bool)
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
-DATABASES = {
-    'default': dj_database_url.config(
-        default=config('DATABASE_URL')
-    )
-}
+SECRET_KEY = '!j*fq8d)&3(+@j6uj0togh_eq7bb^&w(*l3t*m&sy_g%y@f!6i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
